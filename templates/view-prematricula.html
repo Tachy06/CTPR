@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} <title>Descargar PreMatricula</title> {% endblock %}
+{% block content %}
+    <style>
+        /* Estilo para ocultar los botones de incremento y decremento en Chrome, Safari y Edge */
+        input[type="number"]::-webkit-inner-spin-button,
+        input[type="number"]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+        }
+
+        /* Estilo para ocultar los botones de incremento y decremento en Firefox */
+        input[type="number"] {
+        -moz-appearance: textfield;
+        }
+    </style>
+    {% if request.user.is_authenticated %}
+        <main class="view-prematricula" style="margin-top: 150px;">
+            <div class="container">
+                <h1>Descargar Prematricula</h1>
+                <div class="mb-3">
+                    <h3>Digite el número de cédula</h3>
+                    <form action="" method="POST">{% csrf_token %}
+                        <input type="number" name="cedulaEstu" id="cedulaEstu" class="form-control" style="margin: 15px;" required>
+                        <button class="btn btn-success" type="submit">Mostrar Prematricula</button>
+                    </form>
+                </div>
+            </div>
+        </main>
+    {% else %}
+        <main class="denegado" style="height: 31vh;">
+            <h1 style="display: flex; justify-content: center; align-items: center; margin-top: 250px;">No tienes permisos para ingresar aquí</h1>
+        </main>
+    {% endif %}
+{% endblock %}

@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block meta_description %}Descubre más de lo que es el COTAI{% endblock %}
+{% block title %} <title>Acerca De</title> {% endblock %}
+{% block content %}
+<main class="acercaDe">
+    <div class="container">
+        <div class="informacion">
+            <h1 data-aos="fade-up">¿Que es el COTAI?</h1>
+            <p data-aos="fade-up">El COTAI o CTPR De San Carlos es un colegio técnico ubicado en Ciudad Quesada de San Carlos.<br>
+            Si quieres ver la ubicación exacta <span><a href="{% url 'Ubicacion' %}" style="color: blue; text-decoration: none; font-weight: bold;">toca aquí</a></span>.</p>
+            <p data-aos="fade-up">Aquí podras encontrar diferentes especialidades como: Informática, Contabilidad, etc. Si quieres ver todas y de manera
+            detallada visita este <span><a href="{% url 'Especialidades' %}" style="color: blue; text-decoration: none; font-weight: bold;">link</a></span></p>
+            <p data-aos="fade-up">El COTAI se a representado por tener un pretigio muy bueno, tener estudiantes con buenos valores y trabajadores.</p>
+            <p data-aos="fade-up">De acá podrás salir con un ténico medio en la especialidad que más te guste y podrás realizar una prática en el último año
+            donde pondrás a prueba los conocimientos que fuiste aprendiendo y tendrás más posibilidades que otras personas en quedarte
+            con el puesto de trabajo.</p>
+        </div>
+    </div>
+</main>
+{% endblock %}

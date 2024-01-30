@@ -1,0 +1,93 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta content="IE=edge" http-equiv="X-UA-Compatible">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<meta name="description" content="{% block meta_description %}Descubre el COTAI, un centro educativo público con una educación basada en valores en colegio en Ciudad Quesada de San Carlos{% endblock %}">
+	{% block title %}<title>COTAI</title> {% endblock %}
+	<link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+	<link rel="shortcut icon" href="{% static 'favicon.ico' %}" type="image/x-icon">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+	<link href="{% static 'css/styles.css' %}" rel="stylesheet">
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<script src="{% static 'js/app.js' %}"></script>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" style="box-shadow: 2px 5px 7px black;">
+		<div class="container" data-aos="fade-down" data-aos-duration="1500">
+			<a class="navbar-brand" href="{% url 'Home' %}"> <div class="about-img"></div><img alt="" class="img-fluid" src="{% static 'imagenes/loguito1.jpg' %}"><span class="text-success">  CTPR </span> <span class="SC">San Carlos</span></a>
+			<button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbarSupportedContent" data-bs-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+					<li class="nav-item">
+						<a class="nav-link" href="{% url 'Home' %}">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="{% url 'AcercaDe' %}">Acerca de</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="{% url 'Especialidades' %}">Carreras Técnicas</a>
+					</li>
+					<li class="nav-item preMatriculaItem">
+						{% if not show.show %}
+						{% else %}
+							<a class="nav-link" href="{% url 'PreMatricula10' %}">Pre Matricula</a>
+						{% endif %}
+					</li>
+					<li class="nav-item">
+						<a href="{% url 'Horarios' %}" class="nav-link">Horarios</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="{% url 'Anuncios' %}">Anuncios</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="{% url 'Contacto' %}">Contacto</a>
+					</li>
+					{% if request.user.is_authenticated %}
+						<li class="nav-item">
+							<a class="nav-link" href="/admin/">Panel Admin</a>
+						</li>
+					{% else %}
+					{% endif %}
+				</ul>
+			</div>
+		</div>
+	</nav>
+	{% block content %}
+
+	{% endblock %}
+		<footer>
+			<table class="footer">
+				<tbody>
+					<tr>
+						<td class="izquierda">
+							<h5 class="info">Más información</h5>
+							<a href="{% url 'AcercaDe' %}" class="acerca">Acerca del CTPR San Carlos</a>
+							<a href="/">Contacto</a>
+							<a style="color: white;">Número de teléfono: 2460 0958</a>
+						</td>
+						<td class="centro">
+							<h5>Mira nuestras carreras</h5>
+							<a href="{% url 'Especialidades' %}">Ver especialidades</a>
+						</td>
+						<td class="derecha">
+							<h5>Visita nuestras redes sociales</h5>
+							<a href="https://www.facebook.com/cotai.sancarlos/?locale=es_LA" target="_blank" class="facebook"><i class="bi bi-facebook" id="facebook" style="color: white; margin-right: 5px;"></i>Facebook</a>
+							<a href="https://www.instagram.com/ctprsancarlos/" target="_blank" class="instagram"><i class="bi bi-instagram" id="instagram" style="color: white; margin-right: 5px;"></i>Instagram</a>
+						</td>
+				</tr>
+				</tbody>
+			</table>
+		</footer>
+	<script src="{% static 'js/bootstrap.bundle.min.js' %}"></script> 
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init({
+        duration: 2000,
+        once: true,
+    });
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block meta_description %}Ponte en contacto con un encargado de dirección del CTPRSC, institución ubicada en barrio el Coocique{% endblock %}
+{% block title %} <title>Contacto</title> {% endblock %}
+
+{% block content %}
+<body>
+    <main class="contacto">
+        {% if messages %}
+            {% for message in messages %}
+                <div class="alert {{ message.tags }} alert-dismissible fade show" role="alert">
+                    {{ message }}
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            {% endfor %}
+        {% endif %}
+        <div class="cajaContacto">
+            <img src="{% static 'imagenes/loguito1.jpg' %}" alt="iconoCotai" id="imgC">
+            <h2 id="titulo">Contáctanos</h2>
+            <br>
+            <form action="#" class="contenido" method="POST">{% csrf_token %}
+                <label id="eLabel" for="inpCorreo">Correo</label>
+                    <input type="email" required id="inpCorreo" name="inpCorreo" class="form-control">
+                <br><br>
+                <select name="consultas" id="complainType" class="form-select" style="margin-bottom: 0px; padding-bottom: 0px;">
+                    <option selected value="Motivo">Motivo</option>
+                    <option value="Comentario">Comentario</option>
+                    <option value="Crítica">Crítica</option>
+                    <option value="Pregunta">Pregunta</option>
+                    <option value="Sugerencia">Sugerencia</option>
+                </select>
+                <br><br>
+                <label for="desc">Mensaje:</label>
+                <textarea id="desc" cols="30" rows="10" class="form-select" name="areaMensaje"></textarea>
+                <br><br>
+                <div class="contact_btn">
+                    <input type="submit" name="enviar" id="button" value="Enviar" class="btn btn-success btn_contact">
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+{% endblock %}

@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+
+{% load static %}
+{% block meta_description %}Informate de los últimos anuncios de la institución{% endblock %}
+{% block title %} <title>Anuncios</title> {% endblock %}
+
+{% block content %}
+<body>
+  <main class="anuncios">
+    <div class="bg-success p-3 text-white">
+      <h1 class="fs-2 titulo-anuncio">  Anuncios:</h1>
+    </div>
+    {% for anuncio in anuncios %}
+    <div class="row row-cols-1 row-cols-md-4 g-4 m-3">
+        <div class="col">
+          <div class="card h-100 w-80% text-center" data-toggle="modal" data-target="#myModal">
+            <img src="{{anuncio.imagen.url}}" class="card-img-top" alt="{{anuncio.titulo}}">
+            <div class="card-body">
+              <h5 class="card-title">{{anuncio.titulo}}</h5>
+              <button class="btn btn-success"  data-toggle="modal" data-target="#myModal1">Ver más</button>
+            </div>
+          </div>
+        </div>
+    </div>
+      <div class="modal" id="myModal1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title text-center">{{anuncio.titulo}}</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+              <img src="{{anuncio.imagen.url}}" class="img-anuncios text-center">
+              <p class="card-text">{{anuncio.contenido|safe}}</p>
+              <p></p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </main>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      
+</body>
+{% endblock %}

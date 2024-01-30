@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block meta_description %}El horarios de todas las secciones del COTAI, selecciona tu sección o la sección de tu hijo{% endblock %}
+{% block title %} <title>Horarios</title> {% endblock %}
+
+{% block content %}
+<body>
+  <main class="horarios">
+    <div class="text-center">
+      <div class="row">
+        <div class="btn-group" role="group">
+          {% for nivel in niveles %}
+            <button id="btnGroupDrop" type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+              {{ nivel.nombre }}
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+              {% for seccion in secciones %}
+                {% if seccion.nivel == nivel %}
+                  <li><a class="dropdown-item" data-img-src="{{ seccion.imagen.url }}">{{ seccion.seccion }}</a></li>
+                {% endif %}
+              {% endfor %}
+            </ul>
+          {% endfor %}
+        </div>
+        <div class="row">
+          <div class="image-container">
+            <img id="selected-image" src="" >
+          </div>
+          <script src="{% static 'js/showImage.js' %}"></script>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+{% endblock %}
+

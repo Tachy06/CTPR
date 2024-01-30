@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} <title>Descargar Prematricula</title> {% endblock %}
+{% block content %}
+<style>
+    .descargarPrematricula p{
+        font-size: 14px;
+        padding-left: 10px;
+    }
+    .descargarPrematricula p span{
+        font-weight: bold;
+    }
+    .descargarPrematricula img{
+        height: 100px;
+        width: 150px;
+    }
+
+    .descargarPrematricula a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .descargarPrematricula .title{
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        text-align: center;
+    }
+
+    .descargarPrematricula .title-prematricula{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+</style>
+<main class="descargarPrematricula">
+    {% for estu in estudiante %}
+        <div class="title">
+            <h1 style="margin-top: 150px;" class="title-prematriula">Prematricula de {{estu.nombre_estudiante}}</h1>
+        </div>
+        <p>Cédula: <span>{{estu.cedu_estudiante}}</span></p>
+        <p>Nombre: <span>{{estu.nombre_estudiante}}</span></p>
+        <p>Nacionalidad: <span>{{estu.nacionalidad_estudiante}}</span></p>
+        <p>Fecha de nacimiento: <span>{{estu.fecha_estudiante}}</span></p>
+        <p>Correo del estudiante: <span>{{estu.correo_estudiante}}</span></p>
+        <p>Sexo del estudiante: <span>{{estu.sexo_estudiante}}</span></p>
+        <p>Repitencia: <span>{{estu.repitencia}}</span></p>
+        <p>Especialidades elegidas: <span>{{estu.especialidades}}</span></p>
+        <p>Especialidad Favorita: <span>{{estu.especialidadFavorita}}</span></p>
+        <p>Nombre del padre: <span>{{estu.nombre_padre}}</span></p>
+        <p>Cédula del padre: <span>{{estu.cedu_padre}}</span></p>
+        <p>Nacionalidad del padre: <span>{{estu.nacionalidad_padre}}</span></p>
+        <p>Sexo del padre: <span>{{estu.sexo_padre}}</span></p>
+        <p>Número de teléfono del padre: <span>{{estu.telefono_padre}}</span></p>
+        <p>Correo del padre: <span>{{estu.correo_padre}}</span></p>
+        <p>Ocupación del padre: <span>{{estu.ocupacion_padre}}</span></p>
+        <p>Token único: <span>{{estu.token}}</span></p>
+    {% endfor %}
+    <div class="title">
+        <a href="{% url 'html_to_pdf' %}" class="btn btn-primary">Descargar PDF</a>
+    </div>
+</main>
+{% endblock %}

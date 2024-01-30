@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} <title>Ausencias de estudiantes</title> {% endblock %}
+{% block content %}
+    {% if request.user.is_authenticated %}
+        <main class="ausencias" style="margin-top: 120px;">
+            <div class="container">
+                {% if messages %}
+                    {% for message in messages %}
+                        <div class="alert {{ message.tags }} alert-dismissible fade show" role="alert">
+                            {{ message }}
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+                    {% endfor %}
+                {% endif %}
+                <h1 style="margin-bottom: 0px; padding-bottom: 0px;">Registro de ausencias</h1>
+                <form action="{% url 'Ausencias' %}" method="POST" style="margin-top: 0px;">{% csrf_token %}
+                    <label for="secciones" class="form-label" style="margin: 15px;">Seleccione la sección del estudiante o de los estudiantes</label>
+                    <select name="secciones" id="secciones" class="form-select" required style="margin-bottom: 20px;">
+                        <option value="0" selected>Seleccione una sección</option>
+                        {% for seccion in secciones %}
+                            <option value="{{seccion.seccion}}">{{seccion.seccion}}</option>
+                        {% endfor %}
+                    </select>
+                    <div class="btn-enviar">
+                        <button type="submit" class="btn btn-success">Ver estudiantes</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+    {% else %}
+        <main class="denegado" style="height: 31vh;">
+            <h1 style="display: flex; justify-content: center; align-items: center; margin-top: 250px;">No tienes permisos para ingresar aquí</h1>
+        </main>
+    {% endif %}
+{% endblock %}

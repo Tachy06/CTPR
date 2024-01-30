@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} <title>Ver estudiantes</title> {% endblock %}
+{% block content %}
+    {% if request.user.is_authenticated %}
+        <main class="estudiantes">
+            <div class="container">
+                {% if messages %}
+                    {% for message in messages %}
+                        <div class="alert {{ message.tags }} alert-dismissible fade show" role="alert">
+                            {{ message }}
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+                    {% endfor %}
+                {% endif %}
+                {% if disable %}
+                    <style>
+                        .estudiantes{
+                            height: 51vh;
+                        }
+                    </style>
+                    <h1 style="margin-top: 50px; text-align: center;">No hay estudiantes. Escoge otra sección que si tenga algún estudiante</h1>
+                {% else %}
+                    <h1 class="si_hay_estudiantes">Estudiantes de la {{section}}</h1>
+                {% endif %}
+                <form action="" method="POST">{% csrf_token %}
+                    {% if disable %}
+                    {% else %}
+                        <div class="card-students">
+                            {% for estudiante in estudiantes %}
+                                <div class="mb-3">
+                                    <label for="{{estudiante.nombre_estudiante}}">{{estudiante.nombre_estudiante}}</label>
+                                    <input type="checkbox" name="estudianteAusente" id="{{estudiante.nombre_estudiante}}" value="{{estudiante.id}}" style="margin-bottom: 15px; margin-left: 10px;">
+                                    <input type="text" name="comentario_{{estudiante.id}}" id="{{estudiante.id}}" placeholder="Comentario(opcional)">
+                                </div>
+                            {% endfor %}
+                            <div class="extra">
+                                <label for="nombre_profesor">Nombre del profesor</label>
+                                <input type="text" class="form-control" id="nombre_profesor" name="nombre_profesor" required style="margin-bottom: 10px;">
+                                <label for="materia">Materia</label>
+                                <input type="text" class="form-control" id="materia" name="materia" required>
+                            </div>
+                            <div class="btn-enviarCorreo">
+                                <button type="submit" class="btn btn-primary" {% if disable %}hidden{% endif %}>Enviar Correo</button>
+                            </div>
+                        </div>
+                    {% endif %}
+                </form>
+            </div>
+        </main>
+        {% else %}
+        <main class="denegado" style="height: 31vh;">
+            <h1 style="display: flex; justify-content: center; align-items: center; margin-top: 250px;">No tienes permisos para ingresar aquí</h1>
+        </main>
+    {% endif %}
+{% endblock %}

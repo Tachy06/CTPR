@@ -1,0 +1,139 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} <title>Pre Matricula</title> {% endblock %}
+{% block content %}
+<style>
+    /* Estilo para ocultar los botones de incremento y decremento en Chrome, Safari y Edge */
+    input[type="number"]::-webkit-inner-spin-button,
+    input[type="number"]::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    /* Estilo para ocultar los botones de incremento y decremento en Firefox */
+    input[type="number"] {
+      -moz-appearance: textfield;
+    }
+</style>
+<main class="preMatricula">
+    <div class="container">
+      {% if show.show %}
+        {% if messages %}
+          {% for message in messages %}
+              <div class="alert {{ message.tags }} alert-dismissible fade show" role="alert">
+                  {{ message }}
+                  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+          {% endfor %}
+        {% endif %}
+          <h1>Formulario de la Prematricula de décimo año</h1>
+          <form action="{% url 'PreMatricula10' %}" method="POST">{% csrf_token %}
+              <h3 style="text-align: center;">Seleccione 3 especialidades deseadas</h3>
+              <div class="tecnicas">
+                {% for tecnica in tecnicas %}
+                  <p>{{tecnica.nombre}}</p>
+                  <input type="checkbox" name="especialidadSelect" id="{{tecnica.nombre}}" value="{{tecnica.id}}">
+                {% endfor %}
+                <h6>Digite su especialidad favorita</h6>
+                <label for="especialidadFavorita">Especialidad Favorita</label>
+                <input type="text" name="especialidadFavorita" id="especialidadFavorita">
+              </div>
+              <h3>Datos del estudiante</h3>
+              <div class="mb-3">
+                  <label for="nameEstu">Nombre completo del estudiante</label>
+                  <input type="text" name="nameEstu" id="nameEstu" required>
+                  <select name="typeIdentification" id="typeIdentification" required class="form-select">
+                      <option value="0" selected>Seleccione un tipo de identificación...</option>
+                      <option value="1">Cédula Nacional</option>
+                      <option value="2">Cédula Extranjera</option>
+                  </select>
+                  <label for="ceduEstu">Cédula del estudiante</label>
+                  <input type="number" id="ceduEstu" name="ceduEstu" required>
+                  <label for="nacionalidad">Nacionalidad</label>
+                  <input type="text" name="nacionalidadEstu" id="nacionalidadEstu" required>
+                  <label for="dateofbirth">Fecha de nacimiento</label>
+                  <input type="date" name="dateofbirth" id="dateofbirth" required>
+                  <label for="emailEstu">Correo electrónico del estudiante</label>
+                  <input type="email" name="emailEstu" id="emailEstu">
+                  <label style="margin-bottom: 20px;">Sexo</label>
+                  <div class="container_radios">
+                    <div class="form-check">
+                      <input class="radio_sex" type="radio" name="RadioSexo" id="flexRadioMas" value="Masculino" checked style="width: 40px; height: 20px; margin: 0px; padding: 0px;">
+                      <label class="form-check-label" for="flexRadioMas">
+                        Masculino
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="radio_sex" type="radio" name="RadioSexo" id="flexRadioFem" value="Femenino" style="width: 40px; height: 20px; margin: 0px; padding: 0px;">
+                      <label class="form-check-label" for="flexRadioFem" style="margin-right: 10px;">
+                        Femenino
+                      </label>
+                    </div>
+                  </div>
+                  <label for="instituto">Instituto de procedencia</label>
+                  <input type="text" name="instituto" id="instituto" required>
+                  <label style="margin-bottom: 20px;">Repitencia</label>
+                  <div class="container_radios">
+                    <div class="form-check">
+                      <input class="radio_sex" type="radio" name="RadioRepe" id="flexRadioSi" value="Sí" style="width: 40px; height: 20px; margin: 0px; padding: 0px;">
+                      <label class="form-check-label" for="flexRadioFem" style="margin-right: 10px;">
+                        Sí
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="radio_sex" type="radio" name="RadioRepe" id="flexRadioNo" value="No" checked style="width: 40px; height: 20px; margin: 0px; padding: 0px;">
+                      <label class="form-check-label" for="flexRadioFem" style="margin-right: 10px;">
+                        No
+                      </label>
+                    </div>
+                  </div>
+              </div>
+              <h3>Datos del padre</h3>
+              <div class="mb-3">
+                <label for="nameDad">Nombre completo del padre</label>
+                <input type="text" name="nameDad" id="nameDad">
+                <select name="typeIdentificationDad" id="typeIdentificationDad" required class="form-select">
+                  <option value="0" selected>Seleccione un tipo de identificación...</option>
+                  <option value="1">Cédula Nacional</option>
+                  <option value="2">Cédula Extranjera</option>
+                </select>
+                <label for="IDdad">Cédula de identidad</label>
+                <input type="number" id="IDdad" name="IDdad" required style="margin-bottom: 0px;">
+                <label for="nacionalidadDad">Nacionalidad</label>
+                <input type="text" name="nacionalidadDad" id="nacionalidadDad">
+                <label style="margin-bottom: 20px; margin-top: 0px;">Sexo</label>
+                <div class="container_radios">
+                  <div class="form-check">
+                    <input class="radio_sex" type="radio" name="RadioSexoDad" id="flexRadioMasDad" value="Masculino" checked style="width: 40px; height: 20px; margin: 0px; padding: 0px;">
+                    <label class="form-check-label" for="flexRadioMas">
+                      Masculino
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="radio_sex" type="radio" name="RadioSexoDad" id="flexRadioFemDad" value="Femenino" style="width: 40px; height: 20px; margin: 0px; padding: 0px;">
+                    <label class="form-check-label" for="flexRadioFem" style="margin-right: 10px;">
+                      Femenino
+                    </label>
+                  </div>
+                </div>
+                <label for="Tele">Número de teléfono</label>
+                <input type="number" id="Tele" name="Tele" required>
+                <label for="correoPadre">Correo electrónico</label>
+                <input type="email" name="correoPadre" id="correoPadre">
+                <label for="ocupacion">Ocupación</label>
+                <input type="text" name="ocupacion" id="ocupacion">
+              </div>
+              <button type="submit" class="btn-matricula">
+                <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0 0h24v24H0z" fill="none"></path>
+                  <path d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z" fill="currentColor"></path>
+                <span>Enviar</span>
+              </button>
+          </form>
+        {% else %}
+          <h1 style="margin: 132px;">No es posible ingresar ahora aquí mismo</h1>
+        {% endif %}
+    </div>
+    <script src="{% static 'js/especialidades.js' %}"></script>
+</main>
+{% endblock %}

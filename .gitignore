@@ -1,0 +1,5 @@
+venv
+__pycache__
+staticfiles
+gunicorn.conf.py
+Cotai.sqlite3

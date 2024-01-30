@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} <title>Nuestros Valores!</title> {% endblock %}
+{% block content %}
+    <section id="valores" data-aos="fade-right">
+        <div class="container">
+            <h1>Valores del COTAI</h1>
+            <p>Los estudiantes del Cotai se destacan por tener valores como: <span style="font-weight: bold;">EL RESPETO, EL COMPAÑERISMO, LA RESPONSABILIDAD,
+                EL TRABAJO DURO.</span> Gracias a estos valores año tras año las empresas confían más en los estudiantes que salen de
+                esta institución porque saben de lo que son capaces y saben que van a generar un buen entorno de trabajo.
+            </p>
+            <img src="{% static 'imagenes/mi-seccion.jpg' %}" alt="Sección">
+        </div>
+    </section>
+{% endblock %}

@@ -1,0 +1,2277 @@
+
+Internal Server Error: /prematricula10/
+Traceback (most recent call last):
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\Principal\views.py", line 83, in preMatricula10
+    day, month, year = map(int, partes_fecha)
+ValueError: invalid literal for int() with base 10: '2023-12-21'
+"POST /prematricula10/ HTTP/1.1" 500 76352
+Internal Server Error: /admin/Principal/prematricula/
+Traceback (most recent call last):
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\MySQLdb\connections.py", line 255, in query
+    _mysql.connection.query(self, query)
+MySQLdb.OperationalError: (1054, "Unknown column 'Principal_prematricula.token' in 'field list'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\contrib\admin\options.py", line 688, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\contrib\admin\sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\contrib\admin\options.py", line 2065, in changelist_view
+    "selection_note": _("0 of %(cnt)s selected") % {"cnt": len(cl.result_list)},
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\db\models\query.py", line 380, in __len__
+    self._fetch_all()
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\db\models\query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\MySQLdb\connections.py", line 255, in query
+    _mysql.connection.query(self, query)
+django.db.utils.OperationalError: (1054, "Unknown column 'Principal_prematricula.token' in 'field list'")
+"GET /admin/Principal/prematricula/ HTTP/1.1" 500 196184
+Internal Server Error: /admin/Principal/prematricula/
+Traceback (most recent call last):
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\MySQLdb\connections.py", line 255, in query
+    _mysql.connection.query(self, query)
+MySQLdb.OperationalError: (1054, "Unknown column 'Principal_prematricula.token' in 'field list'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\contrib\admin\options.py", line 688, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\contrib\admin\sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\contrib\admin\options.py", line 2065, in changelist_view
+    "selection_note": _("0 of %(cnt)s selected") % {"cnt": len(cl.result_list)},
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\db\models\query.py", line 380, in __len__
+    self._fetch_all()
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\db\models\query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\MySQLdb\connections.py", line 255, in query
+    _mysql.connection.query(self, query)
+django.db.utils.OperationalError: (1054, "Unknown column 'Principal_prematricula.token' in 'field list'")
+"GET /admin/Principal/prematricula/ HTTP/1.1" 500 196336
+Internal Server Error: /admin/Principal/prematricula/
+Traceback (most recent call last):
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\MySQLdb\connections.py", line 255, in query
+    _mysql.connection.query(self, query)
+MySQLdb.OperationalError: (1054, "Unknown column 'Principal_prematricula.token' in 'field list'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\contrib\admin\options.py", line 688, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\contrib\admin\sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\contrib\admin\options.py", line 2065, in changelist_view
+    "selection_note": _("0 of %(cnt)s selected") % {"cnt": len(cl.result_list)},
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\db\models\query.py", line 380, in __len__
+    self._fetch_all()
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\db\models\query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\MySQLdb\connections.py", line 255, in query
+    _mysql.connection.query(self, query)
+django.db.utils.OperationalError: (1054, "Unknown column 'Principal_prematricula.token' in 'field list'")
+"GET /admin/Principal/prematricula/ HTTP/1.1" 500 196336
+Internal Server Error: /admin/Principal/prematricula/
+Traceback (most recent call last):
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\MySQLdb\connections.py", line 255, in query
+    _mysql.connection.query(self, query)
+MySQLdb.OperationalError: (1054, "Unknown column 'Principal_prematricula.token' in 'field list'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\contrib\admin\options.py", line 688, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\contrib\admin\sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\contrib\admin\options.py", line 2065, in changelist_view
+    "selection_note": _("0 of %(cnt)s selected") % {"cnt": len(cl.result_list)},
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\db\models\query.py", line 380, in __len__
+    self._fetch_all()
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\db\models\query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\MySQLdb\connections.py", line 255, in query
+    _mysql.connection.query(self, query)
+django.db.utils.OperationalError: (1054, "Unknown column 'Principal_prematricula.token' in 'field list'")
+"GET /admin/Principal/prematricula/ HTTP/1.1" 500 196336
+Internal Server Error: /admin/Principal/prematricula/
+Traceback (most recent call last):
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\MySQLdb\connections.py", line 255, in query
+    _mysql.connection.query(self, query)
+MySQLdb.OperationalError: (1054, "Unknown column 'Principal_prematricula.token' in 'field list'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\contrib\admin\options.py", line 688, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\contrib\admin\sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\contrib\admin\options.py", line 2065, in changelist_view
+    "selection_note": _("0 of %(cnt)s selected") % {"cnt": len(cl.result_list)},
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\db\models\query.py", line 380, in __len__
+    self._fetch_all()
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\db\models\query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\MySQLdb\connections.py", line 255, in query
+    _mysql.connection.query(self, query)
+django.db.utils.OperationalError: (1054, "Unknown column 'Principal_prematricula.token' in 'field list'")
+"GET /admin/Principal/prematricula/ HTTP/1.1" 500 196336
+Internal Server Error: /admin/Principal/prematricula/
+Traceback (most recent call last):
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\contrib\admin\options.py", line 688, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\contrib\admin\sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\contrib\admin\options.py", line 1926, in changelist_view
+    cl = self.get_changelist_instance(request)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\contrib\admin\options.py", line 836, in get_changelist_instance
+    return ChangeList(
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\contrib\admin\views\main.py", line 122, in __init__
+    self.queryset = self.get_queryset(request)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\contrib\admin\views\main.py", line 529, in get_queryset
+    qs, search_may_have_duplicates = self.model_admin.get_search_results(
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\contrib\admin\options.py", line 1155, in get_search_results
+    queryset = queryset.filter(models.Q.create(term_queries))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\db\models\query.py", line 1436, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\db\models\query.py", line 1454, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\db\models\query.py", line 1461, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\db\models\sql\query.py", line 1545, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\db\models\sql\query.py", line 1576, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\db\models\sql\query.py", line 1404, in build_filter
+    return self._add_q(
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\db\models\sql\query.py", line 1576, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\db\models\sql\query.py", line 1404, in build_filter
+    return self._add_q(
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\db\models\sql\query.py", line 1576, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\db\models\sql\query.py", line 1426, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\db\models\sql\query.py", line 1236, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\db\models\sql\query.py", line 1724, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'token' into field. Choices are: cedu_estudiante, cedu_padre, colegio_procedencia, correo_estudiante, correo_padre, created, especialidadFavorita, especialidades, fecha_estudiante, id, nacionalidad_estudiante, nacionalidad_padre, nombre_estudiante, nombre_padre, ocupacion_padre, repitencia, sexo_estudiante, sexo_padre, telefono_padre, token, updated
+"GET /admin/Principal/prematricula/?q=QNSTlZ1ha4kLBgPekeMLaSDCJN6hM%40 HTTP/1.1" 500 184382
+Internal Server Error: /admin/Principal/prematricula/
+Traceback (most recent call last):
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\contrib\admin\options.py", line 688, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\contrib\admin\sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\contrib\admin\options.py", line 1926, in changelist_view
+    cl = self.get_changelist_instance(request)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\contrib\admin\options.py", line 836, in get_changelist_instance
+    return ChangeList(
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\contrib\admin\views\main.py", line 122, in __init__
+    self.queryset = self.get_queryset(request)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\contrib\admin\views\main.py", line 529, in get_queryset
+    qs, search_may_have_duplicates = self.model_admin.get_search_results(
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\contrib\admin\options.py", line 1155, in get_search_results
+    queryset = queryset.filter(models.Q.create(term_queries))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\db\models\query.py", line 1436, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\db\models\query.py", line 1454, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\db\models\query.py", line 1461, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\db\models\sql\query.py", line 1545, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\db\models\sql\query.py", line 1576, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\db\models\sql\query.py", line 1404, in build_filter
+    return self._add_q(
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\db\models\sql\query.py", line 1576, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\db\models\sql\query.py", line 1404, in build_filter
+    return self._add_q(
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\db\models\sql\query.py", line 1576, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\db\models\sql\query.py", line 1426, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\db\models\sql\query.py", line 1236, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\db\models\sql\query.py", line 1724, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'token^' into field. Choices are: cedu_estudiante, cedu_padre, colegio_procedencia, correo_estudiante, correo_padre, created, especialidadFavorita, especialidades, fecha_estudiante, id, nacionalidad_estudiante, nacionalidad_padre, nombre_estudiante, nombre_padre, ocupacion_padre, repitencia, sexo_estudiante, sexo_padre, telefono_padre, token, updated
+"GET /admin/Principal/prematricula/?q=QNSTlZ1ha4kLBgPekeMLaSDCJN6hM%40 HTTP/1.1" 500 184388
+Internal Server Error: /admin/Principal/prematricula/
+Traceback (most recent call last):
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\contrib\admin\options.py", line 688, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\contrib\admin\sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\contrib\admin\options.py", line 1926, in changelist_view
+    cl = self.get_changelist_instance(request)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\contrib\admin\options.py", line 836, in get_changelist_instance
+    return ChangeList(
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\contrib\admin\views\main.py", line 122, in __init__
+    self.queryset = self.get_queryset(request)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\contrib\admin\views\main.py", line 529, in get_queryset
+    qs, search_may_have_duplicates = self.model_admin.get_search_results(
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\contrib\admin\options.py", line 1155, in get_search_results
+    queryset = queryset.filter(models.Q.create(term_queries))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\db\models\query.py", line 1436, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\db\models\query.py", line 1454, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\db\models\query.py", line 1461, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\db\models\sql\query.py", line 1545, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\db\models\sql\query.py", line 1576, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\db\models\sql\query.py", line 1404, in build_filter
+    return self._add_q(
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\db\models\sql\query.py", line 1576, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\db\models\sql\query.py", line 1404, in build_filter
+    return self._add_q(
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\db\models\sql\query.py", line 1576, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\db\models\sql\query.py", line 1426, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\db\models\sql\query.py", line 1236, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\db\models\sql\query.py", line 1724, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword '"token"' into field. Choices are: cedu_estudiante, cedu_padre, colegio_procedencia, correo_estudiante, correo_padre, created, especialidadFavorita, especialidades, fecha_estudiante, id, nacionalidad_estudiante, nacionalidad_padre, nombre_estudiante, nombre_padre, ocupacion_padre, repitencia, sexo_estudiante, sexo_padre, telefono_padre, token, updated
+"GET /admin/Principal/prematricula/?q=QNSTlZ1ha4kLBgPekeMLaSDCJN6hM%40 HTTP/1.1" 500 184656
+Internal Server Error: /prematricula10/
+Traceback (most recent call last):
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view Principal.views.preMatriculaDecimo didn't return an HttpResponse object. It returned None instead.
+"POST /prematricula10/ HTTP/1.1" 500 72382
+Internal Server Error: /prematricula10/
+Traceback (most recent call last):
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view Principal.views.preMatriculaDecimo didn't return an HttpResponse object. It returned None instead.
+"POST /prematricula10/ HTTP/1.1" 500 72382
+Internal Server Error: /prematricula10/
+Traceback (most recent call last):
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view Principal.views.preMatriculaDecimo didn't return an HttpResponse object. It returned None instead.
+"POST /prematricula10/ HTTP/1.1" 500 72394
+Internal Server Error: /prematricula10/
+Traceback (most recent call last):
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view Principal.views.preMatriculaDecimo didn't return an HttpResponse object. It returned None instead.
+"POST /prematricula10/ HTTP/1.1" 500 72397
+Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\Principal\views.py", line 14, in home
+    return render(request, 'index.html', contexto) # Se carga el html index del proyecto
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'PreMatricula10' not found. 'PreMatricula10' is not a valid view function or pattern name.
+"GET / HTTP/1.1" 500 144198
+Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\Principal\views.py", line 14, in home
+    return render(request, 'index.html', contexto) # Se carga el html index del proyecto
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'PreMatricula10' not found. 'PreMatricula10' is not a valid view function or pattern name.
+"GET / HTTP/1.1" 500 144186
+Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\Principal\views.py", line 14, in home
+    return render(request, 'index.html', contexto) # Se carga el html index del proyecto
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'PreMatricula10' not found. 'PreMatricula10' is not a valid view function or pattern name.
+"GET / HTTP/1.1" 500 144186
+Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\Principal\views.py", line 14, in home
+    return render(request, 'index.html', contexto) # Se carga el html index del proyecto
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'PreMatricula10' not found. 'PreMatricula10' is not a valid view function or pattern name.
+"GET / HTTP/1.1" 500 144186
+Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\Principal\views.py", line 14, in home
+    return render(request, 'index.html', contexto) # Se carga el html index del proyecto
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'PreMatricula10' not found. 'PreMatricula10' is not a valid view function or pattern name.
+"GET / HTTP/1.1" 500 144186
+Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\Principal\views.py", line 14, in home
+    return render(request, 'index.html', contexto) # Se carga el html index del proyecto
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'PreMatricula10' not found. 'PreMatricula10' is not a valid view function or pattern name.
+"GET / HTTP/1.1" 500 144186
+Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\Principal\views.py", line 14, in home
+    return render(request, 'index.html', contexto) # Se carga el html index del proyecto
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'PreMatricula10' not found. 'PreMatricula10' is not a valid view function or pattern name.
+"GET / HTTP/1.1" 500 144186
+Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\Principal\views.py", line 14, in home
+    return render(request, 'index.html', contexto) # Se carga el html index del proyecto
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'PreMatricula10' not found. 'PreMatricula10' is not a valid view function or pattern name.
+"GET / HTTP/1.1" 500 144186
+Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\Principal\views.py", line 14, in home
+    return render(request, 'index.html', contexto) # Se carga el html index del proyecto
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'PreMatricula10' not found. 'PreMatricula10' is not a valid view function or pattern name.
+"GET / HTTP/1.1" 500 144186
+Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\Principal\views.py", line 14, in home
+    return render(request, 'index.html', contexto) # Se carga el html index del proyecto
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'PreMatricula10' not found. 'PreMatricula10' is not a valid view function or pattern name.
+"GET / HTTP/1.1" 500 144186
+Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\Principal\views.py", line 14, in home
+    return render(request, 'index.html', contexto) # Se carga el html index del proyecto
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'PreMatricula10' not found. 'PreMatricula10' is not a valid view function or pattern name.
+"GET / HTTP/1.1" 500 144186
+Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\Principal\views.py", line 14, in home
+    return render(request, 'index.html', contexto) # Se carga el html index del proyecto
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'PreMatricula10' not found. 'PreMatricula10' is not a valid view function or pattern name.
+"GET / HTTP/1.1" 500 144186
+Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\Principal\views.py", line 14, in home
+    return render(request, 'index.html', contexto) # Se carga el html index del proyecto
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'PreMatricula10' not found. 'PreMatricula10' is not a valid view function or pattern name.
+"GET / HTTP/1.1" 500 144186
+Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\Principal\views.py", line 14, in home
+    return render(request, 'index.html', contexto) # Se carga el html index del proyecto
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'PreMatricula10' not found. 'PreMatricula10' is not a valid view function or pattern name.
+"GET / HTTP/1.1" 500 144186
+Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\Principal\views.py", line 14, in home
+    return render(request, 'index.html', contexto) # Se carga el html index del proyecto
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'PreMatricula10' not found. 'PreMatricula10' is not a valid view function or pattern name.
+"GET / HTTP/1.1" 500 144186
+Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\Principal\views.py", line 14, in home
+    return render(request, 'index.html', contexto) # Se carga el html index del proyecto
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'PreMatricula10' not found. 'PreMatricula10' is not a valid view function or pattern name.
+"GET / HTTP/1.1" 500 144186
+Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\Principal\views.py", line 14, in home
+    return render(request, 'index.html', contexto) # Se carga el html index del proyecto
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'PreMatricula10' not found. 'PreMatricula10' is not a valid view function or pattern name.
+"GET / HTTP/1.1" 500 144186
+Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\Principal\views.py", line 14, in home
+    return render(request, 'index.html', contexto) # Se carga el html index del proyecto
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'PreMatricula10' not found. 'PreMatricula10' is not a valid view function or pattern name.
+"GET / HTTP/1.1" 500 144186
+Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\Principal\views.py", line 14, in home
+    return render(request, 'index.html', contexto) # Se carga el html index del proyecto
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'PreMatricula10' not found. 'PreMatricula10' is not a valid view function or pattern name.
+"GET / HTTP/1.1" 500 144186
+Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\Principal\views.py", line 14, in home
+    return render(request, 'index.html', contexto) # Se carga el html index del proyecto
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'PreMatricula10' not found. 'PreMatricula10' is not a valid view function or pattern name.
+"GET / HTTP/1.1" 500 144186
+Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\Principal\views.py", line 14, in home
+    return render(request, 'index.html', contexto) # Se carga el html index del proyecto
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'PreMatricula10' not found. 'PreMatricula10' is not a valid view function or pattern name.
+"GET / HTTP/1.1" 500 144186
+Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\Principal\views.py", line 14, in home
+    return render(request, 'index.html', contexto) # Se carga el html index del proyecto
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'PreMatricula10' not found. 'PreMatricula10' is not a valid view function or pattern name.
+"GET / HTTP/1.1" 500 144186
+Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\Principal\views.py", line 14, in home
+    return render(request, 'index.html', contexto) # Se carga el html index del proyecto
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'PreMatricula10' not found. 'PreMatricula10' is not a valid view function or pattern name.
+"GET / HTTP/1.1" 500 144186
+Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\Principal\views.py", line 14, in home
+    return render(request, 'index.html', contexto) # Se carga el html index del proyecto
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'PreMatricula10' not found. 'PreMatricula10' is not a valid view function or pattern name.
+"GET / HTTP/1.1" 500 144186
+Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\Principal\views.py", line 14, in home
+    return render(request, 'index.html', contexto) # Se carga el html index del proyecto
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'PreMatricula10' not found. 'PreMatricula10' is not a valid view function or pattern name.
+"GET / HTTP/1.1" 500 144186
+Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\Principal\views.py", line 14, in home
+    return render(request, 'index.html', contexto) # Se carga el html index del proyecto
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'PreMatricula10' not found. 'PreMatricula10' is not a valid view function or pattern name.
+"GET / HTTP/1.1" 500 144186
+Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\Principal\views.py", line 14, in home
+    return render(request, 'index.html', contexto) # Se carga el html index del proyecto
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'PreMatricula10' not found. 'PreMatricula10' is not a valid view function or pattern name.
+"GET / HTTP/1.1" 500 144186
+Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\Principal\views.py", line 14, in home
+    return render(request, 'index.html', contexto) # Se carga el html index del proyecto
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'PreMatricula10' not found. 'PreMatricula10' is not a valid view function or pattern name.
+"GET / HTTP/1.1" 500 144186
+Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\Principal\views.py", line 14, in home
+    return render(request, 'index.html', contexto) # Se carga el html index del proyecto
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'PreMatricula10' not found. 'PreMatricula10' is not a valid view function or pattern name.
+"GET / HTTP/1.1" 500 144186
+Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\Principal\views.py", line 14, in home
+    return render(request, 'index.html', contexto) # Se carga el html index del proyecto
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'PreMatricula10' not found. 'PreMatricula10' is not a valid view function or pattern name.
+"GET / HTTP/1.1" 500 144186
+Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\Principal\views.py", line 14, in home
+    return render(request, 'index.html', contexto) # Se carga el html index del proyecto
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'PreMatricula10' not found. 'PreMatricula10' is not a valid view function or pattern name.
+"GET / HTTP/1.1" 500 144186
+Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\Principal\views.py", line 14, in home
+    return render(request, 'index.html', contexto) # Se carga el html index del proyecto
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'PreMatricula10' not found. 'PreMatricula10' is not a valid view function or pattern name.
+"GET / HTTP/1.1" 500 144186
+Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\Principal\views.py", line 14, in home
+    return render(request, 'index.html', contexto) # Se carga el html index del proyecto
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'PreMatricula10' not found. 'PreMatricula10' is not a valid view function or pattern name.
+"GET / HTTP/1.1" 500 144186
+Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\Principal\views.py", line 15, in home
+    return render(request, 'index.html', contexto) # Se carga el html index del proyecto
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\defaulttags.py", line 321, in render
+    return nodelist.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'PreMatricula10' not found. 'PreMatricula10' is not a valid view function or pattern name.
+"GET / HTTP/1.1" 500 161465
+Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\Principal\views.py", line 15, in home
+    return render(request, 'index.html', contexto) # Se carga el html index del proyecto
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\defaulttags.py", line 321, in render
+    return nodelist.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'PreMatricula10' not found. 'PreMatricula10' is not a valid view function or pattern name.
+"GET / HTTP/1.1" 500 161328
+Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\Principal\views.py", line 15, in home
+    return render(request, 'index.html', contexto) # Se carga el html index del proyecto
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\defaulttags.py", line 321, in render
+    return nodelist.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'PreMatricula10' not found. 'PreMatricula10' is not a valid view function or pattern name.
+"GET / HTTP/1.1" 500 161653
+Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\Principal\views.py", line 15, in home
+    return render(request, 'index.html', contexto) # Se carga el html index del proyecto
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\defaulttags.py", line 321, in render
+    return nodelist.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'PreMatricula10' not found. 'PreMatricula10' is not a valid view function or pattern name.
+"GET / HTTP/1.1" 500 161790
+Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\Principal\views.py", line 15, in home
+    return render(request, 'index.html', contexto) # Se carga el html index del proyecto
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\defaulttags.py", line 321, in render
+    return nodelist.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'PreMatricula10' not found. 'PreMatricula10' is not a valid view function or pattern name.
+"GET / HTTP/1.1" 500 161663
+Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\Principal\views.py", line 15, in home
+    return render(request, 'index.html', contexto) # Se carga el html index del proyecto
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\defaulttags.py", line 321, in render
+    return nodelist.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'PreMatricula10' not found. 'PreMatricula10' is not a valid view function or pattern name.
+"GET / HTTP/1.1" 500 161663
+Internal Server Error: /prematricula10/
+Traceback (most recent call last):
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'else'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\proyecto_colegio\Django\CTPR\Principal\views.py", line 188, in preMatricula10
+    return render(request, 'preMatricula10.html', contexto) # Se carga el html de la prematricula con las tecnicas que hay registradas en la tabla de Tecnicas
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "D:\proyecto_colegio\Django\CTPR\venv\lib\site-packages\django\template\base.py", line 558, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 135: 'else', expected 'endblock'. Did you forget to register or load this tag?
+"GET /prematricula10/ HTTP/1.1" 500 178922

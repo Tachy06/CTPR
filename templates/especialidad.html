@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block meta_description %}Obten información específica de cada especialidad del COTAI{% endblock %}
+{% block title %} <title>Especialidad</title> {% endblock %}
+{% block content %}
+    <main class="main-ubicacion">
+        {% for especialidad in especialidades%}
+            <h1 class="nombre-esp">{{especialidad.nombre}}</h1>
+            {{especialidad.contenido|safe}}
+            <img src="{{especialidad.imagen.url}}" alt="{{especialidad.nombre}}" class="img-full">
+        {% endfor %}
+    </main>
+{% endblock %}

@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block meta_description %}Puedes ver acá todas las especialidades disponibles que tenemos en el COTAI o CTPRSC{% endblock %}
+{% block title %} <title>Especialidades</title> {% endblock %}
+{% block content %}
+    <main id="especialidad" data-aos="fade-down" data-aos-duration="1500">
+        <h1 class="h1-especialidad" id="h1-especialidad">Especialidades del CTPR de<br> San Carlos</h1>
+            <div class="especialidadContainer">
+                {% for esp in especi %}
+                    <div class="container">
+                        <div class="card text-white bg-success mb-3" id="esp">
+                            {% if esp.imagen == "" %}
+                                <p>No hay imagen</p>
+                            {% else %}
+                                <a href="{{esp.slug}}/" style="display: flex; justify-content: center; align-items: center;"><img src="{{esp.imagen.url}}" alt="{{esp.nombre}}" class="card-img" id="img-esp"></a>
+                            {% endif %}
+                            <div class="card-body">
+                                <h2 class="card-title" style="display: flex; justify-content: center; align-items: center;"><a href="{{esp.slug}}/" style="text-decoration: none; color: black;">{{esp.nombre}}</a></h2>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+    </main>
+{% endblock %}

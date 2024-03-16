@@ -28,7 +28,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', default='your secret key')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['18.116.209.103', 'www.ctprsc.com', 'ctprsc.com', '127.0.0.1', 'localhost']
 
 
 # Application definition
@@ -126,14 +126,14 @@ WSGI_APPLICATION = 'CTPR.wsgi.application'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 DATABASES = {
-        # 'default': {
-        #     'ENGINE': 'django.db.backends.mysql',
-        #     'NAME': 'ctpr_sc',
-        #     'USER': 'root',
-        #     'PASSWORD': '',
-        #     'HOST': 'localhost',
-        #     'PORT': ''
-        # }
+#        'default': {
+#            'ENGINE': 'django.db.backends.mysql',
+#            'NAME': 'ctpr_sc',
+#            'USER': 'root',
+#            'PASSWORD': '',
+#            'HOST': 'localhost',
+#            'PORT': ''
+#        }
     'default': {
     'ENGINE': 'django.db.backends.sqlite3',
     'NAME': BASE_DIR / 'Cotai.sqlite3',
@@ -201,11 +201,14 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-EMAIL_HOST_USER = 'kendallrodri1@gmail.com'
-EMAIL_HOST_PASSWORD = 'asaaxfqhhvanfyms'
+EMAIL_HOST_USER = 'web.cotai.sc@gmail.com'
+EMAIL_HOST_PASSWORD = 'lvth cptt kxmj buao'
 
 
 LOGIN_REDIRECT_URL = 'Home'
+
+SESSION_ENGINE = 'django.contrib.sessions.backends.db'  # Puedes usar 'django.contrib.sessions.backends.cache' o 'django.contrib.sessions.backends.file' también
+SESSION_COOKIE_AGE = 1209600 
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field

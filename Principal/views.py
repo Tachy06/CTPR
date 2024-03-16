@@ -39,7 +39,7 @@ def contacto(request):
             subject = 'Mensaje de parte de la página web' # Se redacta el subject que va a tener el correo
             message = f'Proveniente de: {correo} \nMotivo: {consulta} \nMensaje: {mensaje}' # Se redacta el mensaje que va a tener el correo
             from_email = str(correo) # Se define hacia donde va hacer enviado
-            to_email = 'kendallrodri1@gmail.com' # se define quien lo va a enviar 
+            to_email = 'web.cotai.sc@gmail.com' # se define quien lo va a enviar 
             send_mail(subject, message, from_email, [to_email], fail_silently=False,) # Se envia el correo con las configuraciones anteriores
             return redirect('/')
     else:

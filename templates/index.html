@@ -69,6 +69,9 @@
         <a href="/ausencias/"><button type="submit" class="btn btn-danger">Reportar estudiantes</button></a>
     </div>
 </section>
+{% else %}
+{% endif %}
+{% if request.user.is_authenticated and request.user.is_superuser %}
 <section id="download-prematricula" data-aos="fade-down">
     <div class="container">
         <h1>Descargar la prematrícula de un estudiante</h1>

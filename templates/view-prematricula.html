@@ -15,7 +15,7 @@
         -moz-appearance: textfield;
         }
     </style>
-    {% if request.user.is_authenticated %}
+    {% if request.user.is_authenticated and request.user.is_superuser %}
         <main class="view-prematricula" style="margin-top: 150px;">
             <div class="container">
                 <h1>Descargar Prematricula</h1>

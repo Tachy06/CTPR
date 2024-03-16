@@ -45,7 +45,7 @@
 					<li class="nav-item">
 						<a class="nav-link" href="{% url 'Contacto' %}">Contacto</a>
 					</li>
-					{% if request.user.is_authenticated %}
+					{% if request.user.is_authenticated and request.user.is_staff %}
 						<li class="nav-item">
 							<a class="nav-link" href="/admin/">Panel Admin</a>
 						</li>
@@ -65,7 +65,7 @@
 						<td class="izquierda">
 							<h5 class="info">Más información</h5>
 							<a href="{% url 'AcercaDe' %}" class="acerca">Acerca del CTPR San Carlos</a>
-							<a href="/">Contacto</a>
+							<a href="/contacto/">Contacto</a>
 							<a style="color: white;">Número de teléfono: 2460 0958</a>
 						</td>
 						<td class="centro">

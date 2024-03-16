@@ -3,12 +3,12 @@ from .models import *
 
 # Register your models here.
 
-class seccionAdmin(admin.ModelAdmin):
+class seccionAdmin(admin.ModelAdmin): # Se carga la tabla de Secciones en el panel admin para agregar las secciones desde ahí o modificarlas o borrarlas
     list_display = ['seccion']
     readonly_fields = ('created', 'updated')
     date_hierarchy = 'created'
 
-class estudiantesAdmin(admin.ModelAdmin):
+class estudiantesAdmin(admin.ModelAdmin): # Se carga la tabla de Estudiantes en el panel admin para agregar los estudiantes desde ahí o modificarlas o borrarlas
     list_display = ['nombre_estudiante']
     readonly_fields = ('created', 'updated')
     date_hierarchy = 'created'

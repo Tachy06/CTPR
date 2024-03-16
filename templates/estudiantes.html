@@ -2,7 +2,7 @@
 {% load static %}
 {% block title %} <title>Ver estudiantes</title> {% endblock %}
 {% block content %}
-    {% if request.user.is_authenticated %}
+    {% if request.user.is_authenticated and request.user.is_superuser %}
         <main class="estudiantes">
             <div class="container">
                 {% if messages %}

@@ -3,7 +3,7 @@ from Horarios.models import *
 
 # Create your models here.
 
-class secciones(models.Model):
+class secciones(models.Model): # Se crea la tabla de las secciones
     seccion = models.CharField(max_length=20)
     imagen = models.ImageField(upload_to='horarios/', null=False, blank=True)
     nivel = models.ForeignKey(nivel, on_delete=models.CASCADE)
@@ -16,7 +16,7 @@ class secciones(models.Model):
     def __str__(self):
         return self.seccion
 
-class estudiantes(models.Model):
+class estudiantes(models.Model): # Se crea la tabla de la estudiantes
     nombre_estudiante = models.CharField(max_length=200)
     seccion_estudiante = models.ManyToManyField(secciones)
     nombre_padre = models.CharField(max_length=200)

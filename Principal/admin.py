@@ -15,7 +15,7 @@ class preMatriculaAdmin(admin.ModelAdmin): # Se carga la tabla de Prematricila e
     date_hierarchy = 'created'
     search_fields = ['cedu_estudiante', 'nombre_estudiante', 'token']
 
-class showPrematriculaAdmin(admin.ModelAdmin):
+class showPrematriculaAdmin(admin.ModelAdmin): # Se carga la tabla de showPrematricila en el panel admin para permitir si mostrar la prematricula o no
     list_display = ['show']
 
 admin.site.register(Tecnicas, tecnicasAdmin)

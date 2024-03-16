@@ -3,7 +3,7 @@ from .models import *
 
 # Register your models here.
 
-class especialidadAdmin(admin.ModelAdmin):
+class especialidadAdmin(admin.ModelAdmin): # Se carga la tabla de especialidades en el panel admin
     list_display = ['nombre']
     readonly_fields = ('created', 'updated')
     date_hierarchy = 'created'
